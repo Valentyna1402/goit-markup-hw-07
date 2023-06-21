@@ -78,6 +78,9 @@ ol {
 /* ---------------HEADER--------------------- */
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -120,7 +123,11 @@ ol {
 
 .mobile-menu-container {
   position: relative;
+  height: 100%;
   padding: 80px 0 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu-close-btn {
@@ -169,8 +176,11 @@ ol {
 }
 
 .mobile-contacts-list {
-  margin-top: 284px;
   margin-bottom: 48px;
+}
+
+.mobile-contacts-item {
+  margin-bottom: 40px;
 }
 
 .mobile-contacts-link-tel {
@@ -181,7 +191,6 @@ ol {
   letter-spacing: var(--standart-letter-spacing);
   text-transform: capitalize;
   color: var(--iris-color);
-  margin-bottom: 40px;
 }
 
 .mobile-contacts-link-mail {
@@ -190,15 +199,12 @@ ol {
   line-height: 1.2;
   letter-spacing: var(--standart-letter-spacing);
   color: var(--slate-color);
-  margin-bottom: 48px;
 }
 
 .mobile-soc-list {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 0 40px 40px 0;
+  gap: 56px;
 }
 
 .mobile-soc-item {
@@ -328,11 +334,12 @@ ol {
 
 .team {
   background-color: var(--cloud-color);
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 
 .team-container {
   max-width: 264px;
+  background-color: var(--cloud-color);
 }
 
 .team-title {
@@ -348,7 +355,7 @@ ol {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  row-gap: 72px;
 }
 
 .team-item {
@@ -356,11 +363,10 @@ ol {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
-  margin-bottom: 72px;
 }
 
 .team-item-container {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-item-title {
@@ -415,8 +421,7 @@ ol {
 /* ---------------CUSTOMERS--------------------- */
 
 .customers {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 0;
 }
 
 .customers-container {
@@ -473,13 +478,11 @@ ol {
 .footer {
   font-family: inherit;
   background-color: var(--navy-color);
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 0;
 }
 
 .footer-container {
   max-width: 428px;
-  gap: 0;
 }
 
 .footer-left-container {
@@ -519,7 +522,6 @@ ol {
   margin-bottom: 72px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -568,7 +570,6 @@ ol {
 .footer-form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
